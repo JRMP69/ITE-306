@@ -1,5 +1,19 @@
-num1 = 5
-num2=8
+print("Arithmetic")
+x = 10
+y = 5
+print("ANSWER: ", x + y)
 
-sum = num1 + num2
-print("SUM = {0}".format(sum))
+#SUBTRACTION
+x = 10
+y = 5
+print("ANSWER: ", x - y)
+
+#MULTIPLICATION
+x = 10
+y = 5
+print("ANSWER: ", x * y)
+
+#DIVISION
+x = 10
+y = 5
+print("ANSWER: ", x / y)
