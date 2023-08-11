@@ -1,0 +1,13 @@
+# Calculate average grade
+prelim_grade = float(input("Enter the Prelim Grade: "))
+midterm_grade = float(input("Enter the Midterm Grade: "))
+final_grade = float(input("Enter the Final Grade: "))
+average_grade = prelim_grade * 0.3 + midterm_grade * 0.3 + final_grade * 0.4
+
+# Input student name
+student_name = input("Enter the Student Name: ")
+
+# Display grade computation
+print("\nGrade Computation")
+print("Student Name:", student_name)
+print("Average Grade:", round(average_grade, 2))
