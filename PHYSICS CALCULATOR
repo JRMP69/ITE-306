@@ -1,0 +1,35 @@
+print("PHYSICS CALCULATOR MENU")
+print("1] Force")
+print("2] Momentum")
+print("3] Velocity")
+print("4] Acceleration")
+print("5] Exit")
+
+choice = input("Choose [1/2/3/4/5]: ")
+
+if choice == '1':
+    acceleration = float(input("Enter Acceleration: "))
+    mass = float(input("Enter Mass: "))
+    print(f"Force = {mass * acceleration}")
+
+elif choice == '2':
+    velocity = float(input("Enter Velocity: "))
+    mass = float(input("Enter Mass: "))
+    print(f"Momentum = {mass * velocity}")
+
+elif choice == '3':
+    displacement = float(input("Enter Displacement: "))
+    time = float(input("Enter Time: "))
+    print(f"Velocity = {displacement * time}")
+
+elif choice == '4':
+    initial_velocity = float(input("Enter Initial Velocity: "))
+    final_velocity = float(input("Enter Final Velocity: "))
+    time = float(input("Enter Time: "))
+    print(f"Acceleration = {(final_velocity - initial_velocity) / time}")
+
+elif choice == '5':
+    print("Thank you for using my Physics Calculator Program")
+
+else:
+    print("Invalid choice.")
