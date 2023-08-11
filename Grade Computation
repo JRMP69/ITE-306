@@ -1,0 +1,24 @@
+#Grade Computation
+
+#Name of the Student
+print("Enter Name of the Student: ")
+Student_Name = input()
+
+#Prelim Grade
+print("Enter Prelim Grade: ")
+prelim_Grade = float(input())
+
+#Midterm Grade
+print("Enter Midterm Grade: ")
+Midterm_Grade = float(input())
+
+print("Enter Final Grade: ")
+Final_Grade = float(input())
+
+#Formula
+average_grade = prelim_Grade * 0.3 + Midterm_Grade * 0.3 + Final_Grade * 0.4
+
+#OUTPUT
+print("Grade Computation")
+print("Student Name: ", Student_Name)
+print("Average Grade: ", average_grade)
