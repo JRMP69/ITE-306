@@ -1,0 +1,19 @@
+#MACHINE PROBLEM/EXAM
+scores = []
+total_score = 0
+
+# Input Number of Score
+number_of_scores = int(input("Enter the number of scores: "))
+
+#Input Score and Calculate Input
+for i in range(number_of_scores):
+    score = float(input(f"Enter score {i + 1}: "))#show the Number of enter score and score
+    scores.append(score)
+    total_score += score
+
+#formula/Calculate
+average_score = total_score / number_of_scores
+
+# Display results
+print(f"Total Score: ", total_score)#Display the Total Score
+print(f"Average Score: ", average_score)#Display the Average Score
