@@ -1,0 +1,14 @@
+# List of products
+products_list = ["Magnolia Chicken", "555 Sardines", "Palmolive Soap", "Sunsilk Shampoo", "Tide Ultra", "Gillette Blade"]
+
+# Input product to search
+product_to_search = input("Enter the product to search: ")
+
+# Search for the product
+if product_to_search in products_list:
+    result_message = "Product Found!"
+else:
+    result_message = "Product Not Found!"
+
+# Display result
+print("\nMessage:", result_message)
