@@ -1,0 +1,30 @@
+expenses = set()
+
+while True:
+    print("\nMenu:")
+    print("1. Add daily expenses")
+    print("2. Calculate total expenses")
+    print("3. Display total expenses")
+    print("4. Exit")
+
+    choice = input("Enter your choice [1/2/3/4]: ")
+
+    if choice == '1':
+        expense = float(input("Enter daily expenses: "))
+        expenses.add(expense)
+        print("Expenses added.")
+    elif choice == '2':
+        total_expenses = sum(expenses)
+        print(f"Total expenses saved: ", total_expenses)
+    elif choice == '3':
+        if expenses:
+            print("List of expenses:")
+            for expense in expenses:
+                print(expense)
+        else:
+            print("No expenses saved yet.")
+    elif choice == '4':
+        print("Exiting the program.")
+        break
+    else:
+        print("Invalid choice. Please select a valid option.")
