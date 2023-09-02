@@ -1,0 +1,49 @@
+Courses = []
+
+while True: #for looping the system
+    print("COURSES REGISTRATION SYSTEM")
+    print("1] Enter New Course")
+    print("2] Edit Course")
+    print("3] Delete Course")
+    print("4] List Course")
+    print("5] Exit")
+
+    # Code for user input
+    choice = input("Choose [1/2/3/4/5]: ")
+
+    # Decision for adding product
+    if choice == '1': #If 'choice' is equals to 1 decision 1 will be executed
+        new_Course = input("Enter the name of the Course: ")#input for new Courses
+        Courses.append(new_Course) #will add the new input Courses to the list
+        print("The new Course is successfully added.")
+    # Decision for removing Courses
+    elif choice == '2': #If 'choice' is equals to 2 decision 2 will be executed
+        Course_orig = input("Enter the name of the Course: ") #Original Course
+        if Course_orig in Courses: #Will show the list of the Origal Courses
+            Course_edited = input("Enter the new name of the Course: ") #Edit new courses
+            location = Courses.index(Course_orig)
+            Courses[location] = Course_edited #new inputed courses
+            print("The Course is successfully edited.")
+        else:#for wrong input courses
+            print("Record not found!")
+    elif choice == '3':#If 'choice' is equals to 3 decision 3 will be executed
+        Course_name = input("Enter the name of the Course: ")
+        if Course_name in Courses: #show the course that want to delete
+            location = Courses.index(Course_name)
+            Courses.remove(Course_name) #to remove the course
+            print("The Course is successfully deleted.") #print successfully deleted
+        else:#for wrong input courses
+            print("Record not found!")
+    elif choice == '4': #If 'choice' is equals to 4 decision 4 will be executed
+        print("Course List") #print courses list
+        if len(Courses) > 0: #to show the list of the courses
+            for s in Courses:
+                print(s)
+        else:#for wrong input courses
+            print("No record found!") #print no record found
+    elif choice == '5': #If 'choice' is equals to 5 decision 5 will be executed
+        print("Thank you for using my CourseS Registration System") #print saying thankyou
+        break
+    else:#for wrong input courses
+        print("Invalid choice. Please choose a valid option.")#print telling that Invalid choices and choose valid option
+
