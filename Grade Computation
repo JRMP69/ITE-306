@@ -22,3 +22,30 @@ average_grade = prelim_Grade * 0.3 + Midterm_Grade * 0.3 + Final_Grade * 0.4
 print("Grade Computation")
 print("Student Name: ", Student_Name)
 print("Average Grade: ", average_grade)
+
+--------------------------------------
+
+try:
+
+  num_grades = int(input("Enter the number of grades (1 to 100): "))
+
+  if num_grades < 1 or num_grades > 100:
+    print("Number of grades must be between 1 and 100.")
+  else:
+
+    grades = []
+    for i in range(num_grades):
+      grade = float(input(f"Enter grade {i + 1}: "))
+      grades.append(grade)
+
+    average_grade = sum(grades) / num_grades
+
+    print(f"Average grade: {average_grade:.2f}")
+
+    if average_grade >= 50:
+      print("Passed")
+    else:
+      print("Failed")
+
+except ValueError:
+  print("Invalid input. Please enter valid numbers for grades.")
